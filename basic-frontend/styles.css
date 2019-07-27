@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.activeZone {
+  width: 1000px;
+  position: absolute;
+  left: 50%;
+  margin-left: -500px;
+}
+
+.title {
+  color: white;
+  font-family: "Verdana";
+  margin-top: 0.6em;
+  margin-left: 0.1em;
+  font-size: 2em;
+}
+
+.BGtitle {
+  background-color: rgb(255, 90, 31);
+  height: 5em;
+}
+
+.BGtabs {
+  background-color: rgb(234, 255, 186);
+  height: 2em;
+}
+
+.tab {
+  color: #404E4D;
+  width: 25%;
+  height: 2em;
+  float: left;
+  background-color: #cee39d;
+}
+
+.tab:hover {
+    background-color: rgb(234, 255, 186);
+    transition: 0.3s;
+}
+
+.tabText {
+  font-family: "Verdana";
+  font-size: 1em;
+  margin-top: 0.4em;
+  margin-left: 0.4em;
+}
