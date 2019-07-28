@@ -18,12 +18,12 @@ body {
   font-size: 2em;
 }
 
-.BGtitle {
+.bgtitle {
   background-color: rgb(255, 90, 31);
   height: 5em;
 }
 
-.BGtabs {
+.bgtabs {
   background-color: rgb(234, 255, 186);
   height: 2em;
 }
