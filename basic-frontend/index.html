@@ -16,74 +16,26 @@
 
 
   <body>
-    <nav class="navbar navbar-dark my-primary">
-      <div class="container">
-        <a class="navbar-brand" href="#"><h2>Self Management</h2></a>
-      </div>
+    <ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="pills-goals-tab" data-toggle="pill" href="#pills-goals" role="tab" aria-controls="pills-goals" aria-selected="true">Life Goals</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-objectives-tab" data-toggle="pill" href="#pills-objectives" role="tab" aria-controls="pills-objectives" aria-selected="false">Objectives</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-tasks-tab" data-toggle="pill" href="#pills-tasks" role="tab" aria-controls="pills-tasks" aria-selected="false">Tasks</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-calendar-tab" data-toggle="pill" href="#pills-calendar" role="tab" aria-controls="pills-calendar" aria-selected="false">Calendar</a>
+      </li>
+    </ul>
 
-      <div class="container">
-        <ul class="nav nav-pills" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#goals">Life Goals</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#objectives">Objectives</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#tasks">Tasks</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#calendar">Calendar</a>
-          </li>
-        </ul>
-      </nav>
-
-      <div class="tab-content">
-        <div id="goals" class="container tab-pane active"><br>
-          <h3>Life Goals</h3>
-
-          <div class="row">
-            <div class="col-sm">
-              <div class="list-group" id="list-tab" role="tablist">
-                <a class="list-group-item list-group-item-action active" id="list-goal1-list" data-toggle="list" href="#list-goal1" role="tab" aria-controls="goal1">Goal 1</a>
-                <a class="list-group-item list-group-item-action" id="list-goal2-list" data-toggle="list" href="#list-goal2" role="tab" aria-controls="goal2">Goal 2</a>
-                <a class="list-group-item list-group-item-action" id="list-goal3-list" data-toggle="list" href="#list-goal3" role="tab" aria-controls="goal3">Goal 3</a>
-                <a class="list-group-item list-group-item-action" id="list-goal4-list" data-toggle="list" href="#list-goal4" role="tab" aria-controls="goal4">Goal 4</a>
-                <a class="list-group-item list-group-item-action" id="list-goal5-list" data-toggle="list" href="#list-goal5" role="tab" aria-controls="goal5">Goal 5</a>
-                <a class="list-group-item list-group-item-action" id="list-goal6-list" data-toggle="list" href="#list-goal6" role="tab" aria-controls="goal6">Goal 6</a>
-                <a class="list-group-item list-group-item-action" id="list-goal7-list" data-toggle="list" href="#list-goal7" role="tab" aria-controls="goal7">Goal 7</a>
-                <a class="list-group-item list-group-item-action" id="list-goal8-list" data-toggle="list" href="#list-goal8" role="tab" aria-controls="goal8">Goal 8</a>
-                <a class="list-group-item list-group-item-action" id="list-goal9-list" data-toggle="list" href="#list-goal9" role="tab" aria-controls="goal9">Goal 9</a>
-                <a class="list-group-item list-group-item-action" id="list-goal10-list" data-toggle="list" href="#list-goal10" role="tab" aria-controls="goal10">Goal 10</a>
-              </div>
-            </div>
-
-            <div class="col-sm">
-              <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="list-goal1" role="tabpanel" aria-labelledby="list-goal1-list">Goal 1</div>
-                <div class="tab-pane fade" id="list-goal2" role="tabpanel" aria-labelledby="list-goal2-list">Goal 2</div>
-                <div class="tab-pane fade" id="list-goal3" role="tabpanel" aria-labelledby="list-goal3-list">Goal 3</div>
-                <div class="tab-pane fade" id="list-goal4" role="tabpanel" aria-labelledby="list-goal4-list">Goal 4</div>
-                <div class="tab-pane fade" id="list-goal5" role="tabpanel" aria-labelledby="list-goal5-list">Goal 5</div>
-                <div class="tab-pane fade" id="list-goal6" role="tabpanel" aria-labelledby="list-goal6-list">Goal 6</div>
-                <div class="tab-pane fade" id="list-goal7" role="tabpanel" aria-labelledby="list-goal7-list">Goal 7</div>
-                <div class="tab-pane fade" id="list-goal8" role="tabpanel" aria-labelledby="list-goal8-list">Goal 8</div>
-                <div class="tab-pane fade" id="list-goal9" role="tabpanel" aria-labelledby="list-goal9-list">Goal 9</div>
-                <div class="tab-pane fade" id="list-goal10" role="tabpanel" aria-labelledby="list-goal10-list">Goal 10</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="objectives" class="container tab-pane fade"><br>
-          <h3>Objectives</h3>
-        </div>
-        <div id="tasks" class="container tab-pane fade"><br>
-          <h3>Tasks</h3>
-        </div>
-        <div id="calendar" class="container tab-pane fade"><br>
-          <h3>Calendar</h3>
-        </div>
-      </div>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-goals" role="tabpanel" aria-labelledby="pills-goals-tab">Life goals tab</div>
+      <div class="tab-pane fade" id="pills-objectives" role="tabpanel" aria-labelledby="pills-objectives-tab">Objectives tab</div>
+      <div class="tab-pane fade" id="pills-tasks" role="tabpanel" aria-labelledby="pills-tasks-tab">Tasks tab</div>
+      <div class="tab-pane fade" id="pills-calendar" role="tabpanel" aria-labelledby="pills-calendar-tab">Calendar tab</div>
     </div>
 
   </body>
