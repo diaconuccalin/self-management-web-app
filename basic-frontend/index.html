@@ -1,85 +1,42 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <title>Self management</title>
-    <script src="index.js"></script>
-	<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class = "bgtitle">
-    <div class = "activeZone">
-      <div class = "title">Self Management</div>
+  </head>
+
+
+  <body>
+    <ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="pills-goals-tab" data-toggle="pill" href="#pills-goals" role="tab" aria-controls="pills-goals" aria-selected="true">Life Goals</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-objectives-tab" data-toggle="pill" href="#pills-objectives" role="tab" aria-controls="pills-objectives" aria-selected="false">Objectives</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-tasks-tab" data-toggle="pill" href="#pills-tasks" role="tab" aria-controls="pills-tasks" aria-selected="false">Tasks</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-calendar-tab" data-toggle="pill" href="#pills-calendar" role="tab" aria-controls="pills-calendar" aria-selected="false">Calendar</a>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-goals" role="tabpanel" aria-labelledby="pills-goals-tab">Life goals tab</div>
+      <div class="tab-pane fade" id="pills-objectives" role="tabpanel" aria-labelledby="pills-objectives-tab">Objectives tab</div>
+      <div class="tab-pane fade" id="pills-tasks" role="tabpanel" aria-labelledby="pills-tasks-tab">Tasks tab</div>
+      <div class="tab-pane fade" id="pills-calendar" role="tabpanel" aria-labelledby="pills-calendar-tab">Calendar tab</div>
     </div>
-  </div>
-  <div class = "bgtabs">
-    <div class = "activeZone">
-  	   <a href><div class = "tab"><div class = "tabText">Life Goals</div></div></a>
-       <a href><div class = "tab"><div class = "tabText">Objectives</div></div></a>
-       <a href><div class = "tab"><div class = "tabText">Tasks</div></div></a>
-       <a href><div class = "tab"><div class = "tabText">Calendar</div></div></a>
-    </div>
-  </div>
-  <div class = "content">
-    <div class = "activeZone">
 
-      <div class = "halfZone">
-        <h1>My life goals</h1>
-        <select name = "My life goals" size = "10">
-          <option value = "test1">Test1</option>
-          <option value = "test2">Test2</option>
-          <option value = "test3">Test3</option>
-          <option value = "test4">Test4</option>
-          <option value = "test5">Test5</option>
-          <option value = "test6">Test6</option>
-          <option value = "test7">Test7</option>
-          <option value = "test8">Test8</option>
-          <option value = "test9">Test9</option>
-          <option value = "test10">Test10</option>
-          <option value = "test11">Test11</option>
-          <option value = "test12">Test12</option>
-        </select>
-      </div>
-
-      <div class = "halfZone">
-        <h1>Selected Test</h1>
-
-        <h2>Description</h2>
-        <div class = "subContent">
-          Test description.<br>
-          Test description line 2.<br>
-        </div>
-
-        <br>
-        <h2>Color</h2>
-        <div class = "subContent">
-          <select>
-            <option value = "tomato">Tomato</option>
-            <option value = "tangerine">Tangerine</option>
-            <option value = "banana">Banana</option>
-            <option value = "basil">Basil</option>
-            <option value = "sage">Sage</option>
-            <option value = "peacock">Peacock</option>
-            <option value = "blueberry">Blueberry</option>
-            <option value = "lavander">Lavander</option>
-            <option value = "grape">Grape</option>
-            <option value = "flamingo">Flamingo</option>
-            <option value = "graphite">Graphite</option>
-          </select>
-        </div>
-
-        <br>
-        <h2>Related Objectives</h2>
-        <div class = "subContent">
-          <ul>
-            <li><a href>Test1</a></li>
-            <li><a href>Test2</a></li>
-            <li><a href>Test3</a></li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</body>
+  </body>
 </html>
